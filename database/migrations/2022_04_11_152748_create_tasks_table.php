@@ -15,6 +15,7 @@ class CreateTasksTable extends Migration
     {
         Schema::create('tasks', function (Blueprint $table) {
             $table->bigIncrements('id');
+            //本当はここに予定日時を入れたかった。そして予定日時順にタスクを並べて、明日のタスクを赤字にしたかった。
             $table->string('content');
             $table->timestamps();
         });
