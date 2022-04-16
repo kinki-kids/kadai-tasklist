@@ -8,15 +8,15 @@
         <thead>
             <tr>
                 <th>id</th>
+                <th>ステータス</th>
                 <th>タスク</th>
-                <th>更新日時</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>{{ $task->id }}</td>
+                <td>{{ $task->status }}</td>
                 <td>{{ $task->content }}</td>
-                <td>{{ $task->created_at }}</td>
             </tr>
         </tbody>
     </table>

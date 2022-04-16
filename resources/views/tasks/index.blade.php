@@ -9,6 +9,7 @@
             <thead>
                 <tr>
                     <th>id</th>
+                    <th>ステータス</th>
                     <th>タスク</th>
                     <th>投稿日時</th>
                     <th>更新日時</th>
@@ -18,6 +19,7 @@
                 @foreach ($tasks as $task)
                 <tr>
                     <td>{!! link_to_route('tasks.show', $task->id, ['task' => $task->id]) !!}</td>
+                    <td>{{ $task->status }}</td>
                     <td>{{ $task->content }}</td>
                     <td>{{ $task->created_at }}</td>
                     @if($task->updated_at > $task->created_at)
