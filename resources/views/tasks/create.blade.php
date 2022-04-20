@@ -13,7 +13,7 @@
                 </div>
                 <div class="form-group">
                     {!! Form::label('content', 'タスク:') !!}
-                    {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('content', null, ['class' => 'form-control','placeholder' => '何する？']) !!}
                 </div>
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary']) !!}
             {!! Form::close() !!}
